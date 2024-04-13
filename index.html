@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Chaurasiya Resume !</title>
+  <link rel="shortcut icon" href="deepak-web-developer.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <span data-char="D">D
+        <span>D</span>
+        <span>D</span>
+        <span>D</span>
+        <span>D</span>
+        <span>D</span>
+        <span>D</span>
+        <span>D</span>
+        <span>D</span>
+        <span>D</span>
+      </span>
+      <span data-char="E">E
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+      </span>
+      <span data-char="E">E
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+        <span>E</span>
+      </span>
+      <span data-char="P">P
+        <span>P</span>
+        <span>P</span>
+        <span>P</span>
+        <span>P</span>
+        <span>P</span>
+        <span>P</span>
+        <span>P</span>
+        <span>P</span>
+        <span>P</span>
+      </span>
+      <span data-char="A">A
+        <span>A</span>
+        <span>A</span>
+        <span>A</span>
+        <span>A</span>
+        <span>A</span>
+        <span>A</span>
+        <span>A</span>
+        <span>A</span>
+        <span>A</span>
+      </span>
+      <span data-char="K">K
+        <span>K</span>
+        <span>K</span>
+        <span>K</span>
+        <span>K</span>
+        <span>K</span>
+        <span>K</span>
+        <span>K</span>
+        <span>K</span>
+        <span>K</span>
+      </span>
+    </div>
+    <!-- Pdf Section Start Here -->
+    <iframe class="pdf" src="Deepak-Chaurasiya.pdf" width="800" height="500">
+    </iframe>
+    <!-- Pdf Section End Here -->
+  </div>
+
+  <style>
+    /* 3D Name Start Here */
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(28, 28, 28, 1);
+      overflow: auto;
+    }
+
+    .wrapper {
+      display: flex;
+      perspective: 450px;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      font-size: 2vw;
+      font-family: "Fredoka One", cursive;
+      color: #f6ff6b;
+      transition: all 0.5s;
+      animation: rotate 5s ease-in infinite;
+      animation-direction: alternate;
+      letter-spacing: 0.5vw;
+      -webkit-text-stroke: 1.5px #c4cb58;
+      transform-style: preserve-3d;
+    }
+
+    span::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: attr(data-char);
+      transform: translateY(75%) rotateX(180deg);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(180deg, rgba(246, 255, 107, .0) 10%, rgba(246, 255, 107, .5));
+      -webkit-text-stroke: 0px #c4cb58;
+    }
+
+    span span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: none;
+    }
+
+    span:nth-child(1) span {
+      transform: translateZ(-1px);
+    }
+
+    span:nth-child(2) span {
+      transform: translateZ(-2px);
+    }
+
+    span:nth-child(3) span {
+      transform: translateZ(-3px);
+    }
+
+    span:nth-child(4) span {
+      transform: translateZ(-4px);
+    }
+
+    span:nth-child(5) span {
+      transform: translateZ(-5px);
+    }
+
+    span:nth-child(6) span {
+      transform: translateZ(-6px);
+    }
+
+    span:nth-child(7) span {
+      transform: translateZ(-7px);
+    }
+
+    span:nth-child(8) span {
+      transform: translateZ(-8px);
+    }
+
+    span:nth-child(9) span {
+      transform: translateZ(-9px);
+    }
+
+    span:nth-child(10) span {
+      transform: translateZ(-10px);
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotateY(90deg);
+      }
+
+      100% {
+        transform: rotateY(0deg);
+      }
+    }
+
+    /* 3D Name End Here */
+
+
+
+    /* Pdf Section Start Here */
+    .pdf {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+    }
+
+    .pdf,
+    html,
+    body {
+      height: 85%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Pdf Section End Here */
+  </style>
+
+</body>
+
+</html>
